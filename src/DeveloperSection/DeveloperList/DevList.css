@@ -1,0 +1,9 @@
+.dev-list ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+img.profile {
+    max-width: 6em;
+    border-radius: 5em;
+}

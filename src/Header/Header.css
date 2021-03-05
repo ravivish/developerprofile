@@ -1,0 +1,13 @@
+.header {
+  background-color: #2f2e41;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.page-heading {
+    margin-left: 2%;;
+    font-size: 2em;
+}
