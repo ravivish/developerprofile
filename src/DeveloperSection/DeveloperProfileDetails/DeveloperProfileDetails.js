@@ -1,18 +1,20 @@
 import { Component } from "react";
-import "./developerprofile.css";
+import "./DeveloperProfileDetails.css";
 
-class DeveloperProfile extends Component {
+class DeveloperProfileDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+
   render() {
+    const user = this.props;
     return (
       <section className="font-name">
-        <button className="developer-btn">Add Developer Profile</button>
+        {user.id}
       </section>
     );
   }
 }
 
-export default DeveloperProfile;
+export default DeveloperProfileDetails;

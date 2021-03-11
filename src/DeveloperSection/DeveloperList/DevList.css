@@ -1,9 +1,31 @@
 .dev-list ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 img.profile {
     max-width: 6em;
     border-radius: 5em;
+}
+.list {
+    display: flex;
+    justify-content: start;
+    margin: 1em 15em;
+}
+.no-dev-found {
+    margin: 1em 1em;
+    font-size: 2em;
+}
+.dev-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.north-east{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.8em 1em;
 }

@@ -1,0 +1,25 @@
+.developer-btn{
+    background-color: rgba(125,99,158,1);
+    padding: 1em 1em;
+    font-size: 2em;
+    border-radius: 17px;
+    margin-bottom: 1.5em;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+.add-developer{
+    display: block;   
+}
+.profile-icons{
+    height: 5vh;
+}
+.input-box {
+    padding: 0.5em 1em;   
+}
+
+.add-dev-heading{
+    font-size: 2em;
+    margin: 0.4em 2em;
+}
