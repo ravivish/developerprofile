@@ -8,7 +8,7 @@ img.profile {
 }
 .list {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 1em 15em;
 }
 .no-dev-found {
@@ -22,10 +22,9 @@ img.profile {
     margin: 0 1em;
     font-size: 1.5em;
     font-weight: 600;
+    text-decoration: none;
+    color: #9F8E63;    
 }
 .north-east{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 1.8em 1em;
+    color:#0768FA;
 }
