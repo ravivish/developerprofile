@@ -44,7 +44,7 @@ class AddDeveloperProfile extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     if (this.state.github_id) {
-      const request = new Request("http://localhost:3001/api/developers", {
+      const request = new Request("/api/developers", {
         method: "POST",
         body: JSON.stringify(this.state),
         headers: new Headers({

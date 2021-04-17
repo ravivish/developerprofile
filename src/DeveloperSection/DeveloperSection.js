@@ -1,7 +1,7 @@
 import { Component } from "react";
-import "./DevSection.css";
-import DeveloperList from "./DeveloperList/DevList";
-import AddDeveloperProfile from "./AddDeveloperProfile/AddDeveloperProfile";
+import "./DeveloperSection.css";
+import DeveloperList from "../DeveloperList/DeveloperList";
+import AddDeveloperProfile from "../AddDeveloperProfile/AddDeveloperProfile";
 
 class DevSection extends Component {
   constructor(props) {

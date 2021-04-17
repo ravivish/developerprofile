@@ -1,24 +1,24 @@
 .search-wrapper {
   background-color: rgb(194 196 196);
-  padding: 1em;
+  padding: 15px;
   display: flex;
   justify-content: center;
-  margin: 0 30em;
-  border-radius: 1em;
+  border-radius: 20px;
   height: 50px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .search-wrapper input[type="text"] {
-  padding: 1em 0.5em;
-  border-radius: 0.5em;
-  margin: 0 1em;
+  font-size: 25px;
+  border-radius: 20px;
   width: 100%;
   outline: none;
-  font-size: 1em;
-  margin: -5px 1px;
+  border: none;
+  margin: -6px 2px;
 }
 .hrline {
-  margin: 0 3rem;
+  margin: 0 3px;
 }
 
 .dev-heading {

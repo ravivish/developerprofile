@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer font-name">
-      <h2>
+      <span>
         Made with{" "}
         <svg className="heart" viewBox="0 0 32 29.6">
           <path
@@ -12,7 +12,7 @@ function Footer() {
           />
         </svg>{" "}
         by Ravi
-      </h2>
+      </span>
     </footer>
   );
 }

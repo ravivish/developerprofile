@@ -1,26 +1,23 @@
 .dev-list ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 img.profile {
-    max-width: 6em;
-    border-radius: 5em;
+    max-width: 60px;
+    border-radius: 30px;
 }
 .list {
     display: flex;
     justify-content: flex-start;
-    margin: 1em 15em;
+    margin: 1px 15px;
 }
 .no-dev-found {
-    margin: 1em 1em;
-    font-size: 2em;
+    margin: 1px 1px;
+    font-size: 2px;
 }
 .dev-name{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 1em;
-    font-size: 1.5em;
+    /* font-size: 1.5px; */
     font-weight: 600;
     text-decoration: none;
     color: #9F8E63;    
