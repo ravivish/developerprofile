@@ -1,20 +1,18 @@
 import { Component } from "react";
-import Modal from "../Modal/Modal";
+// import Modal from "../Modal/Modal";
+import Modal from "../containers/Modal/Modal";
 import "./AddDeveloperProfile.css";
 
 class AddDeveloperProfile extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: false };
-    // this.showModal = this.showModal.bind(this);
-    // this.hideModal = this.hideModal.bind(this);
+    this.state = { isshowModal: false,loading:false };
   }
   showModal = () => {
-    this.setState({ show: true });
+    this.setState({ isshowModal: true });
   };
-
-  hideModal = () => {
-    this.setState({ show: false });
+  closeModal = () => {
+    this.setState({ isshowModal: false });
   };
 
   handleChange = (e) => {
@@ -65,7 +63,7 @@ class AddDeveloperProfile extends Component {
   render() {
     return (
       <section className="font-name">
-        <Modal show={this.state.show} handleClose={this.hideModal}>
+        <Modal show={this.state.isshowModal} modalClosed={this.closeModal}>
           <h3 className="add-dev-heading">Add developer profile</h3>
           <div className="hrline">
             <hr />
@@ -194,7 +192,7 @@ class AddDeveloperProfile extends Component {
               />
             </div>
           </form>
-          <button className="btn" onClick={this.hideModal}>
+          <button className="btn" onClick={this.closeModal}>
             Cancel
           </button>
           <button className="btn btn-submit" onClick={this.handleSubmit}>
