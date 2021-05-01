@@ -3,7 +3,7 @@ import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
 import DeveloperSection from "./DeveloperSection/DeveloperSection";
 
-function Main() {
+function App() {
   return (
     <div className="App">
       <Header />
@@ -13,4 +13,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default App;

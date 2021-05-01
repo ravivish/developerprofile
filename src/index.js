@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Main from "./Main";
+import App from "./App";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import DeveloperProfileDetails from "./DeveloperProfileDetails/DeveloperProfileDetails";
 
@@ -14,7 +14,7 @@ function Start() {
           path="/DeveloperProfileDetails/:id"
           component={DeveloperProfileDetails}
         />
-        <Route exact path="/" component={Main} />
+        <Route exact path="/" component={App} />
       </Switch>
     </Router>
   );
