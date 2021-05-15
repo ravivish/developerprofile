@@ -3,6 +3,7 @@
 } 
 .repo-list ul{
     list-style: none;
+    font-size: 20px;
 }
 .repo-list li{
     padding-top: 20px;
@@ -18,4 +19,7 @@
 }
 .redirect-arrow{
     height: 14px;
+}
+.transparent-text{
+    opacity: 0.5;
 }

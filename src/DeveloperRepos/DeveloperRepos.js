@@ -34,8 +34,8 @@ class DeveloperRepos extends Component {
                       </svg>
                     </span>
                   </a>
-                  <span>
-                    {e.updated_at}
+                  <span className="transparent-text">
+                    Updated on {e.updated_at}
                   </span>
                   <br/>
                   {e.description}
