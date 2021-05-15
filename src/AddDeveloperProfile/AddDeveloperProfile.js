@@ -151,7 +151,7 @@ class AddDeveloperProfile extends Component {
                 value={this.state.twitter_id}
                 name="twitter_id"
                 onChange={this.handleChange}
-              />
+              /> 
             </div>
             <div className="form-element">
               <label>

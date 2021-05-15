@@ -1,5 +1,14 @@
 .dev-detail-profile{
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+.profile-detail{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 2rem;
 }

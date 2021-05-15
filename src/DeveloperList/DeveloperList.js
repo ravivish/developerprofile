@@ -63,10 +63,10 @@ class DeveloperList extends Component {
                           height="24"
                           viewBox="0 0 24 24"
                           width="24"
-                          className="north-east"
+                          className="w-3 h-3 ml-1 fill-current lg:w-5 lg:h-5 lg:ml-5 text-linkArrow"
                         >
-                          <rect fill="none" height="24" width="24" />
-                          <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z" />
+                          <rect fill="none" height="24" width="24"></rect>
+                          <path d="M9,5v2h6.59L4,18.59L5.41,20L17,8.41V15h2V5H9z"></path>
                         </svg>
                       </span>
                     </p>

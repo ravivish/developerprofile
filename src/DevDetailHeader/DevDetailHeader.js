@@ -15,16 +15,16 @@ import App from "../App";
 //             <Link to="/" component={App}>All Developer</Link>
 //         </div>
 
-//     )
+//     ) 
 //   }
 // }
 function DevDetailHeader() {
   return (
     <div className="dev-header">
-      <Link to="/" component={App}>
+      <Link to="/" className="nav-item font-name">
         The Developer Profile
-      </Link>
-      <Link to="/" component={App}>
+        </Link>
+        <Link to="/" className="nav-item font-name">
         All Developer
       </Link>
     </div>

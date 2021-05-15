@@ -51,7 +51,7 @@ router.post('/', (req, res) => {
         } catch (error) {
             // eslint-disable-next-line no-console
             // console.error(error);
-            res.status(404).send({ message: 'invalid github username' });
+            res.status(404).send({ message: error });
         }
     }
 });

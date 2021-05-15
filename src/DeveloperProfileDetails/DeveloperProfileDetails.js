@@ -1,7 +1,8 @@
 import { Component } from "react";
 import "./DeveloperProfileDetails.css";
-import  DeveloperRepos from "../DeveloperRepos/DeveloperRepos";
-// import DevDetailHeader from "../DevDetailHeader/DevDetailHeader";
+import DeveloperRepos from "../DeveloperRepos/DeveloperRepos";
+import DevDetailHeader from "../DevDetailHeader/DevDetailHeader";
+import Footer from "../Footer/Footer";
 
 class DeveloperProfileDetails extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class DeveloperProfileDetails extends Component {
 
   render() {
     const { error, isLoaded, devdetails } = this.state;
+    console.log(devdetails);
     if (error) {
       return <section>Error: {error.message}</section>;
     } else if (!isLoaded) {
@@ -35,12 +37,17 @@ class DeveloperProfileDetails extends Component {
     } else if (devdetails) {
       return (
         <section className="">
-          {/* <DevDetailHeader /> */}
-          <div>
-            {devdetails.login}
-            <img className="dev-detail-profile" src={devdetails.avatar_url} alt="" />
-            <DeveloperRepos repos={devdetails.repos}/>
+          <DevDetailHeader />
+          <div className="profile-detail">
+            <img
+              className="dev-detail-profile"
+              src={devdetails.avatar_url}
+              alt="userimage"
+            />
+            {devdetails.name}
           </div>
+          <DeveloperRepos repos={devdetails.repos} />
+          <Footer />
         </section>
       );
     }

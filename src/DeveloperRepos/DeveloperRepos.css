@@ -1,3 +1,23 @@
-.Test {
-    font-size: 50px;;
+.repo-list {
+    text-align: center;
+} 
+.repo-list ul{
+    list-style: none;
+}
+.repo-list li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    
+}
+.bottom-line{
+    margin-left: 1.25rem;
+    margin-right: 3.5rem;
+}
+
+.repo-list-item a{
+    text-decoration: none;
+}
+.redirect-arrow{
+    height: 14px;
 }
