@@ -34,7 +34,10 @@ class DeveloperRepos extends Component {
                       </svg>
                     </span>
                   </a>
-                  {e.updated_at}
+                  <span>
+                    {e.updated_at}
+                  </span>
+                  <br/>
                   {e.description}
                   <hr className="bottom-line" />
                 </li>
