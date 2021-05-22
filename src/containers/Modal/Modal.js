@@ -2,22 +2,21 @@ import React from "react";
 // import './Modal.css';
 import classes from "./Modal.module.css";
 import Backdrop from "../Backdrop/Backdrop";
-import Aux from "../Auxilary";
 
 const modal = (props) => (
-  <Aux>
+  <React.Fragment>
       {/* <Backdrop show={props.show} clicked={props.modalClosed}></Backdrop> */}
       <Backdrop show={props.show}></Backdrop>
     <div
       className={classes.Modal}
       style={{
-        transform: props.show ? "translateY(0)" : "translateY(-100vh)",
+        display: props.show ? "block" : "none",
         opacity: props.show ? "1" : "0",
       }}
     >
       {props.children}
     </div>
-  </Aux>
+  </React.Fragment>
 );
 
 export default modal;

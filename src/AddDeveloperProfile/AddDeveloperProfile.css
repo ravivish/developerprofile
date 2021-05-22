@@ -1,5 +1,102 @@
-.developer-btn{
-    background-color: rgba(125,99,158,1);
+.developer-btn {
+  background-color: rgba(125, 99, 158, 1);
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+.search-icon{
+  height: 36px;
+}
+.add-developer-form {
+  margin-top: 20px;
+}
+.profile-icons {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.input-box {
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 20px;
+  display: block;
+  width: 600px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #d0cde1;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 26px;
+}
+
+.add-dev-heading {
+  font-size: 32px;
+  text-align: left;
+  margin-left: 25px;
+}
+.form-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.form-element label {
+  font-size: 24px;
+}
+.form-input {
+  margin-bottom: 20px;
+}
+.form-container {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 70px;
+}
+.add-dev-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 50px;
+  margin-bottom: 13px;
+  margin-right: 24px;
+}
+.btn-submit {
+  font-size: 24px;
+  line-height: 33px;
+  border: none;
+  outline: none;
+  padding: 10px 35px;
+  border-radius: 8px;
+  background: rgba(125, 99, 158, 1);
+  color: #fff;
+  cursor: pointer;
+}
+.cancel-btn {
+  border: none;
+  background: #fff;
+  outline: none;
+  margin-right: 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+/* media queries */
+@media (min-width: 1024px) {
+  .btn-submit {
+    font-size: 24px;
+    line-height: 33px;
+    border: none;
+    outline: none;
+    padding: 10px 35px;
+    border-radius: 8px;
+    background: rgba(125, 99, 158, 1);
+    color: #fff;
+    cursor: pointer;
+  }
+  .developer-btn {
+    background-color: rgba(125, 99, 158, 1);
     padding: 20px 20px;
     font-size: 25px;
     border-radius: 17px;
@@ -8,18 +105,9 @@
     color: white;
     cursor: pointer;
     outline: none;
-}
-.add-developer{
-    display: block;   
-}
-.profile-icons{
-    height: 5vh;
-}
-.input-box {
-    padding: 5px;   
-}
-
-.add-dev-heading{
-    font-size: 20px;
-    margin: 30px;
+  }
+  .search-icon{
+    height: 48px;
+    margin-top:4px
+  }
 }

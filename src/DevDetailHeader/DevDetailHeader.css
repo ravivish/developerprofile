@@ -1,11 +1,25 @@
-.dev-header{
+.dev-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2f2e41;
+}
+.nav-item {
+  padding: 16px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .dev-header {
     display: flex;
     justify-content: space-between;
     background-color: #2f2e41;
-}
-.nav-item{
+  }
+  .nav-item {
     padding: 30px;
     font-size: 30px;
     color: #fff;
     text-decoration: none;
+  }
 }

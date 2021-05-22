@@ -1,21 +1,23 @@
 .Modal {
-    position: fixed;
+    position: absolute;
     z-index: 500;
     background-color: white;
-    width: 70%;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px black;
+    width: 500px;
+    /* border: 1px solid #ccc; */
     padding: 16px;
-    left: 15%;
-    top: 10%;
+    left: 200px;
+    right: 200px;
+    top: 200px;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
+    overflow-y: auto;
   }
   
   @media (min-width: 600px) {
     .Modal {
-      width: 500px;
-      left: calc(50% - 250px);
+      width: 800px;
+      margin: 0 auto;
+      /* left: calc(50px - 250px); */
     }
   }
   

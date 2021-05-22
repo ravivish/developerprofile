@@ -40,6 +40,11 @@ router.post('/', (req, res) => {
                     data.name = response.data.name;
                     data.repos = response.data.repos_url;
                     data.login = response.data.login;
+                    data.company = response.data.company;
+                    data.blog = response.data.blog;
+                    data.location = response.data.location;
+                    data.email = response.data.email;
+                    data.bio = response.data.bio;                    
                     appdata.push(data);
                     res.status(201).send({ id: shortid });
                 })

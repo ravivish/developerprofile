@@ -1,7 +1,6 @@
 // import { Component } from "react";
 import { Link } from "react-router-dom";
 import "./DevDetailHeader.css";
-import App from "../App";
 
 // class DevDetailHeader extends Component {
 //   constructor(props) {
