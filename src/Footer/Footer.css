@@ -12,10 +12,20 @@
 .footer {
   background-color: #2f2e41;
   color: #fff;
-  font-size: 3ch;
-  /* padding: 30px; */
+  font-size: 2ch;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .footer {
+    background-color: #2f2e41;
+    color: #fff;
+    font-size: 3ch;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+  }
 }

@@ -1,0 +1,27 @@
+.Modal {
+  position: absolute;
+  z-index: 500;
+  background-color: white;
+  width: 330px;
+  padding: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+  overflow-y: auto;
+}
+
+@media (min-width: 1024px) {
+  .Modal {
+    position: absolute;
+    z-index: 500;
+    background-color: white;
+    width: 800px;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    padding: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    overflow-y: auto;
+  }
+}

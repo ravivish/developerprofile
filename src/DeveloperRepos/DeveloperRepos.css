@@ -41,10 +41,10 @@
 .repo-description{
     font-size: 32px;
 }
-.repo-wrapper {
+/* .repo-wrapper {
     padding-left: 20px;
     margin-bottom: 30px;
-}
+} */
 .repo-wrapper span {
     font-size: 24px;
 }
@@ -55,10 +55,10 @@
         font-weight: 600;
         text-align: center;
     }
-    .repo-wrapper {
+    /* .repo-wrapper {
         padding-left: 20px;
         margin-bottom: 30px;
-    }
+    } */
     .repo-wrapper span {
         font-size: 34px;
     }

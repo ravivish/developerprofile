@@ -1,6 +1,5 @@
 import React from "react";
-// import './Modal.css';
-import classes from "./Modal.module.css";
+import './Modal.css';
 import Backdrop from "../Backdrop/Backdrop";
 
 const modal = (props) => (
@@ -8,7 +7,7 @@ const modal = (props) => (
       {/* <Backdrop show={props.show} clicked={props.modalClosed}></Backdrop> */}
       <Backdrop show={props.show}></Backdrop>
     <div
-      className={classes.Modal}
+      className="Modal"
       style={{
         display: props.show ? "block" : "none",
         opacity: props.show ? "1" : "0",

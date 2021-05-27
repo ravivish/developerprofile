@@ -9,7 +9,7 @@
   cursor: pointer;
   outline: none;
 }
-.search-icon{
+.search-icon {
   height: 36px;
 }
 .add-developer-form {
@@ -25,7 +25,7 @@
   outline: none;
   margin-top: 20px;
   display: block;
-  width: 600px;
+  width: calc(100% - 35px);
   height: 50px;
   border-radius: 10px;
   border: 1px solid #d0cde1;
@@ -106,8 +106,8 @@
     cursor: pointer;
     outline: none;
   }
-  .search-icon{
+  .search-icon {
     height: 48px;
-    margin-top:4px
+    margin-top: 4px;
   }
 }
