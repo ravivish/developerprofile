@@ -3,17 +3,18 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
     margin-bottom: 50px;
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 img.profile {
     max-width: 40px;
     border-radius: 38px;
 }
-.list {
+.list-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 12px 15px;
-    gap: 1em;
+    gap: 5px;
 }
 .no-dev-found {
     margin: 1px 1px;
@@ -46,7 +47,7 @@ img.profile {
         grid-template-columns: 1fr 1fr;
         margin-top: 70px;
         margin-bottom: 70px;
-        margin-left: 250px;
+        /* margin-left: 250px; */
     }
     img.profile {
         max-width: 77px;
@@ -56,5 +57,12 @@ img.profile {
         margin-left: 17px;
         margin-right: 15px;
         font-size: 30px;
+    }
+    .list-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 12px 15px;
+        gap: 1em;
     }
 }

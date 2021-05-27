@@ -43,7 +43,7 @@ class DeveloperList extends Component {
         <section className="dev-list font-name">
           {devlist.map((value, index) => {
             return (
-              <div key={index} className="list">
+              <div key={index} className="list-item">
                 <img
                   className="profile"
                   src={value.avatar_url}

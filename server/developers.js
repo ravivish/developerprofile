@@ -34,7 +34,7 @@ router.post('/', (req, res) => {
                     // eslint-disable-next-line no-console
                     // console.log(response.data.avatar_url);
                     if (response.status !== 200) {
-                        res.status(404).send({ message: 'invalid github username' });
+                        return res.status(404).send({ message: 'invalid github username' });
                     }
                     data.avatar_url = response.data.avatar_url;
                     data.name = response.data.name;
@@ -45,18 +45,19 @@ router.post('/', (req, res) => {
                     data.location = response.data.location;
                     data.email = response.data.email;
                     data.bio = response.data.bio;                    
+                    // console.log(data);
                     appdata.push(data);
                     res.status(201).send({ id: shortid });
                 })
                 .catch(() => {
                     // eslint-disable-next-line no-console
                     // console.log(error);
-                    res.status(404).send({ message: 'invalid github username' });
+                    return res.status(404).send({ message: 'invalid github username' });
                 });
         } catch (error) {
             // eslint-disable-next-line no-console
             // console.error(error);
-            res.status(404).send({ message: error });
+            return res.status(404).send({ message: error });
         }
     }
 });
