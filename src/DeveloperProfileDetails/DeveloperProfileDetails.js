@@ -47,7 +47,7 @@ class DeveloperProfileDetails extends Component {
             <div className="detail-container">
               {/* <div>{devdetails.blog}</div> */}
               <div>{devdetails.company}</div>
-              <div>{devdetails.bio}</div>
+              <div className="dev-bio">{devdetails.bio}</div>
               <div className="platform-links">
                 <span>
                   <a

@@ -5,16 +5,17 @@
 .repo-list ul{
     list-style: none;
     font-size: 20px;
+    padding: 16px;
 }
 .repo-list li{
-    margin-top: 20px;
     padding-bottom: 10px;
 }
 .bottom-line{
-    /* margin-left: 1rem; */
     margin-right: 3.5rem;
 }
-
+.repo-list-item{
+    margin: 0px;
+}
 .repo-list-item a{
     text-decoration: none;
     color: #0768FA;   
