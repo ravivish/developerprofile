@@ -28,7 +28,7 @@ const appdata = [
     twitterid: "",
     mediumid: "",
     avatar_url: "https://avatars.githubusercontent.com/u/29003397?v=4",
-    name: "Ravi Vishwkarma",
+    name: "Ravi Vishwakarma",
     repos: "https://api.github.com/users/ravivish/repos",
     login: "ravivish",
     company: "Steeprise Infotech",

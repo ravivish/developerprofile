@@ -82,13 +82,9 @@ router.get('/:id', (req, res) => {
                     res.status(200).send(developer);
                 })
                 .catch(() => {
-                    // eslint-disable-next-line no-console
-                    // console.log(error);
                     res.status(400).send({});
                 });
         } catch (error) {
-            // eslint-disable-next-line no-console
-            // console.error(error);
             res.status(400).send({});
         }
     } else {
@@ -96,6 +92,14 @@ router.get('/:id', (req, res) => {
     }
 });
 
+router.get('/users/:id', (req, res) => {
+    const name = req.params.id.substr(1);
+    let user = appdata.filter(i => i.name === name);    
+    if (user !== undefined){
+        return res.status(200).send(user);        
+    }
+    return res.status(400).send({});
+});
 router.delete('/:id', (req, res) => {
     const id = req.params.id.substr(1);
     const index = appdata.findIndex((o) => o.id === id);

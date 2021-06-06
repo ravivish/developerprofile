@@ -12,7 +12,12 @@ class DeveloperList extends Component {
     };
   }
   componentDidMount() {
-    fetch(`/api/developers`)
+    let url = '/api/developers';
+    if(this.props.name){
+      url = `${url}/users/:${this.props.name}`;
+    }
+    console.log(url);
+    fetch(url)
       .then((response) => response.json())
       .then(
         (result) =>
