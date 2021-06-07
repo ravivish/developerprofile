@@ -8,11 +8,12 @@ class DeveloperList extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      devlist: [],
+      devlist: []
     };
   }
   componentDidMount() {
     let url = '/api/developers';
+    alert(this.props.name);
     if(this.props.name){
       url = `${url}/users/:${this.props.name}`;
     }
@@ -46,7 +47,7 @@ class DeveloperList extends Component {
     } else {
       return (
         <section className="dev-list font-name">
-          {devlist.map((value, index) => {
+          {devlist && devlist.map((value, index) => {
             return (
               <div key={index} className="list-item">
                 <img
