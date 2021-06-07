@@ -31,8 +31,7 @@ class DeveloperList extends Component {
   }
   componentDidUpdate() {
     if (this.props.name.length > 0) {
-      let url = `/api/developers/users/:${this.props.name}`;
-      // this.setState({ devlist: [] });
+      let url = `/api/developers/users/:${this.props.name}`;      
       fetch(url)
         .then((response) => response.json())
         .then(

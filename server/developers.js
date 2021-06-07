@@ -98,7 +98,7 @@ router.get("/:id", (req, res) => {
 });
 
 router.get("/users/:id", (req, res) => {
-  const name = req.params.id.substr(1);
+  const id = req.params.id.substr(1);
 //   console.log(name.toLocaleUpperCase());
 
   // appdata.filter(i => {
@@ -110,7 +110,7 @@ router.get("/users/:id", (req, res) => {
 //     // console.log(i.name, name, i.name === name);
 //     return i.name === name;
 //   });
-  const user = appdata.filter((i) => i.name.toLocaleUpperCase() === name.toLocaleUpperCase());  
+  const user = appdata.filter((i) => i.id.toLocaleUpperCase() === id.toLocaleUpperCase());  
 //   console.log(user);
 //   if (user !== undefined && user.length > 0) {
 //     return res.status(200).send(user);
