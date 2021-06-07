@@ -100,10 +100,7 @@ router.get("/:id", (req, res) => {
 router.get("/users/:id", (req, res) => {
   const name = req.params.id.substr(1);
 //   console.log(name.toLocaleUpperCase());
-  // let user1 = appdata.filter(i => i.name === 'Ravi Vishwakarma');
-  // console.log('with static value: ',user1);
-  // let user = appdata.filter(i => i.name === name);
-  // console.log('with dynamic values',user);
+
   // appdata.filter(i => {
   //     console.log(i.name, 'Ravi Vishwakarma', i.name === 'Ravi Vishwakarma');
   //     return i.name === 'Ravi Vishwakarma';
@@ -114,12 +111,11 @@ router.get("/users/:id", (req, res) => {
 //     return i.name === name;
 //   });
   const user = appdata.filter((i) => i.name.toLocaleUpperCase() === name.toLocaleUpperCase());  
-//   const user = appdata.filter((i) => i.name.toLocaleUpperCase().substring(0));  
 //   console.log(user);
-  if (user !== undefined && user.length > 0) {
-    return res.status(200).send(user);
-  }
-  return res.status(400).send({});
+//   if (user !== undefined && user.length > 0) {
+//     return res.status(200).send(user);
+//   }
+  return res.status(200).send(user);
 });
 router.delete("/:id", (req, res) => {
   const id = req.params.id.substr(1);
