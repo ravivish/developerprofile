@@ -6,7 +6,7 @@ import AddDeveloperProfile from "../AddDeveloperProfile/AddDeveloperProfile";
 class DevSection extends Component {
   constructor(props) {
     super(props);
-    this.state = { reRender: false,searchedName:'ravi vishwakarma' };
+    this.state = { reRender: false,searchedName:'' };
   }
   handler = (status) => {
     this.setState({ reRender: status });
