@@ -67,11 +67,11 @@ class AddDeveloperProfile extends Component {
           if (res) {
             // console.log(res.id);
             this.setState({ isshowModal: false });
-            this.props.onChange(true);
+            this.props.onChange();
           }
         })
         .catch((err) => console.log(err));
-    }
+    }                                                       
   };
 
   render() {

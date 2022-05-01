@@ -31,7 +31,7 @@ const appdata = [
     name: "Ravi Vishwakarma",
     repos: "https://api.github.com/users/ravivish/repos",
     login: "ravivish",
-    company: "Steeprise Infotech",
+    company: "Acidaes Solutions",
     blog: "will start soon",
     location: "Noida",
     email: "ravi61023@gmail.com",

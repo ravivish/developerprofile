@@ -11,7 +11,7 @@ const modal = (props) => (
       style={{
         display: props.show ? "block" : "none",
         opacity: props.show ? "1" : "0",
-      }}
+      }} 
     >
       {props.children}
     </div>
